@@ -3,7 +3,7 @@
 +!g1 : count(X) & X < 3  <- a1; !g2; a3.
 +!g1 : count(X) & X >= 3 <- a4; !g3.
 
-+!g2 <- a2; inc.
++!g2 <- a2; inc; .print("end g2").
 +!g3 <- a5; inc.
 
 +count(3) <- a7.

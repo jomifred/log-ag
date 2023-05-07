@@ -21,6 +21,8 @@ public class LoggerArch extends AgArch {
     public void reasoningCycleFinished() {
         if (getTS().getC().getAction() != null)  {
             System.out.println("log: 2.doing "+getTS().getC().getAction().getActionTerm());
+        } else if (getTS().getC().getLastDeed() != null)  {
+            System.out.println("log: last deed: "+getTS().getC().getLastDeed());
         }
     }
 
